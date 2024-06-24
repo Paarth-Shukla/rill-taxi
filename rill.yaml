@@ -1,0 +1,13 @@
+compiler: rill-beta
+olap_connector: clickhouse
+mock_users:
+  - email: janet@salesforce.com
+  - email: mary@dropbox.com
+  - email: ramesh@shopify.com
+    admin: true
+  - email: jack@myintercom.com
+  - email: paarth@zoom.com
+    admin: true
+  - email: gary@wix.com
+  - email: beth@canva.com
+  - email: chloe@airtable.com

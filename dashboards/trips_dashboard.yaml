@@ -1,0 +1,27 @@
+version: 1
+title: "Trips Dashboard"
+description: "Dashboard showing trip data from ClickHouse"
+data_sources:
+  - name: trips
+    type: sql
+    table: trips
+measures:
+  - name: total_trips
+    description: "Total number of trips"
+    expression: "COUNT(*)"
+  - name: total_fare
+    description: "Total fare amount"
+    expression: "SUM(fare_amount)"
+dimensions:
+  - name: pickup_datetime
+    description: "Pickup datetime"
+    expression: "pickup_datetime"
+  - name: dropoff_datetime
+    description: "Dropoff datetime"
+    expression: "dropoff_datetime"
+  - name: pickup_ntaname
+    description: "Pickup NTA Name"
+    expression: "pickup_ntaname"
+  - name: dropoff_ntaname
+    description: "Dropoff NTA Name"
+    expression: "dropoff_ntaname"

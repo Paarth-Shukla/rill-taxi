@@ -1,0 +1,4 @@
+version: 1
+connector: clickhouse
+table: trips
+sql: "SELECT 1"
